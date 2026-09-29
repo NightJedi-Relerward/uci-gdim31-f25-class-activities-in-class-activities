@@ -1,7 +1,8 @@
 # in-class-activities
 ## Devlogs
 ### W1
-Write your W1 activity Devlog here.
+Hello World! After moving the camera off, it would no longer move along with the cat as the parent-child relationship was aborted and the two compoents became independent.
+[https://nightjedi-relerward.itch.io/class-assignment-for-gdim31-week-1](https://nightjedi-relerward.itch.io/class-assignment-for-gdim31-week-1)
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
