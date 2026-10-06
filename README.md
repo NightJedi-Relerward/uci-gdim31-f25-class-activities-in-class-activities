@@ -10,7 +10,7 @@ Hello World! After moving the camera off, it would no longer move along with the
 2. Why is the _bounce variable an int instead of a float, bool, or string?
    Because the times of bounces is whole number, which belongs to integers.
 3. The error you got after Step 4 of Part 2 told you something useful about why that line of code was broken- what was it?
-   It is missing an f, where the variable type of g is actually a float and adding 0.1 directly would not turn into float variable type. This reminds me to check the variable types in simple calculations. 
+   It is missing a ; as without it it would not be a complete sentence.
    
 
 
