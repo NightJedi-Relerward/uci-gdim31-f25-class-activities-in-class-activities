@@ -21,7 +21,8 @@ Activity1:
 Activity2:
 If regarding to the spaceship fleet manufacture line, the class would be the blueprints of the spaceships, then the components are materials that consist the original ship frame, and member variables decide the skin and names of the spaceships, while methods might be different part of the spaceship(weapon, engine, armor, e.g) that decides the functions.
 Acticity3:
-since the function of brightness is consistent to the time of bounces as each time it operates a multiplication, so the brightness would be related to the power of the speedmultiplier, and thus it is increasingly bright. 
+since the function of brightness is consistent to the time of bounces as each time it operates a multiplication, so the brightness would be related to the power of the speedmultiplier, and thus it is increasingly bright.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
