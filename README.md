@@ -24,8 +24,12 @@ II. Activity2:
 If regarding to the spaceship fleet manufacture line, the class would be the blueprints of the spaceships, then the components are materials that consist the original ship frame, and member variables decide the skin and names of the spaceships, while methods might be different part of the spaceship(weapon, engine, armor, e.g) that decides the functions.
 
 III. Acticity3:
-since the function of brightness is consistent to the time of bounces as each time it operates a multiplication, so the brightness would be related to the power of the speedmultiplier, and thus it is increasingly bright.
+since the function of brightness is consistent to the time of bounces as each time it operates a multiplication, so the brightness would be related to the power of the speedmultiplier, and thus it is increas ingly bright.
 
+### W4
+table11
+1. We chose the cat and the football to have rigid body for colliding, and the goal object is for is trigger since the cat and the football needs to contact to produce movements, and the goal object would be trigger and count points if interacting with the ball.
+2. At first my game did not show the time and points but there is no grammer issues in the visual studio. After I discussed with my teammate, we found out that we should call the name of TimeUpdate and Pointupdate previously in the correct place. 
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
