@@ -37,7 +37,11 @@ table11
 ### W7
 table11 https://docs.google.com/document/d/1iBZihNlx92b16mfK2TXGr1CYtdDQOOh7vAeKN-P9YfU/edit?tab=t.0
 I am responsible for searching for class resources
-   
+
+Game plan for Class Activity 6: The member variables includes speed (float) that controls how fast the bat moves;
+playerTransform (Transform) that (is already) stored a reference to the Cat/player, and the isChasing (bool) that tracks whether the bat should currently be chasing the player.
+For the complete process, first the Start() method finds the player, and Update() will enable movement for the bat when chasing, and public StartChasing() and StopChasing() methods will control bat behavior.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
