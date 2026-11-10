@@ -29,7 +29,15 @@ since the function of brightness is consistent to the time of bounces as each ti
 ### W4
 table11
 1. We chose the cat and the football to have rigid body for colliding, and the goal object is for is trigger since the cat and the football needs to contact to produce movements, and the goal object would be trigger and count points if interacting with the ball.
-2. At first my game did not show the time and points but there is no grammer issues in the visual studio. After I discussed with my teammate, we found out that we should call the name of TimeUpdate and Pointupdate previously in the correct place. 
+2. At first my game did not show the time and points but there is no grammer issues in the visual studio. After I discussed with my teammate, we found out that we should call the name of TimeUpdate and Pointupdate previously in the correct place.
+
+### W5-6
+
+
+### W7
+table11 https://docs.google.com/document/d/1iBZihNlx92b16mfK2TXGr1CYtdDQOOh7vAeKN-P9YfU/edit?tab=t.0
+I am responsible for searching for class resources
+   
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
