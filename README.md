@@ -42,6 +42,8 @@ Game plan for Class Activity 6: The member variables includes speed (float) that
 playerTransform (Transform) that (is already) stored a reference to the Cat/player, and the isChasing (bool) that tracks whether the bat should currently be chasing the player.
 For the complete process, first the Start() method finds the player, and Update() will enable movement for the bat when chasing, and public StartChasing() and StopChasing() methods will control bat behavior.
 
+### W8
+The original code in Step 2 made the muskrat to move in the worlds direction instead of its own.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
