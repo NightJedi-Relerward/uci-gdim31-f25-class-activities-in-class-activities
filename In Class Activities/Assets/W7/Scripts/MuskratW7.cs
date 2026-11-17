@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class MuskratW7 : MonoBehaviour
@@ -38,15 +39,20 @@ public class MuskratW7 : MonoBehaviour
         //      WORLD SPACE.
         // This is because the Muskrat's up vector changes direction as it
         //      walks around a bubble, unlike when it's on a flat ground.
-        //
+        transform.TransformDirection(Vector3.up);
+        transform.RotateAround(
+            _sphereTransform.position,
+            transform.TransformDirection(Vector3.up),
+            Input.GetAxis("Horizontal") * _rotationSpeed * Time.deltaTime
+        );
         // You will need:
         // Transform.TransformDirection() https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.TransformDirection.html
         // Transform.RotateAround () https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.RotateAround.html
         //
         // You might want to look below Step 3 for an example :D
-        
+
         float leftright = Input.GetAxis("Horizontal");
-        
+
 
 
         // STEP 3 -------------------------------------------------------------
@@ -65,7 +71,25 @@ public class MuskratW7 : MonoBehaviour
         //      the Muskrat.
         // The Muskrat should never play the "flying" animation while on a
         //      bubble.
-
+        float speed = Mathf.Abs(forward);
+        if (speed > 0.1f)
+        {
+            
+            _animator.SetBool("running", true);
+        }
+        else
+        {
+           
+            _animator.SetBool("running", false);
+        }   
+        if (_rigidbody.linearVelocity.y > 0.1f)
+        {
+            _animator.SetBool("flying", true);
+        }
+        else
+        {
+            _animator.SetBool("flying", false);
+        }
 
         // STEP 5 -------------------------------------------------------------
     }
@@ -80,12 +104,16 @@ public class MuskratW7 : MonoBehaviour
         //      _rotationSpeed speed.
         // Use the Transform.Rotate method: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.Rotate.html
         // and don't forget about Time.deltaTime :D
-        //
+        float leftright = Input.GetAxis("Horizontal");
+        transform.Rotate(Vector3.up * leftright * _rotationSpeed * Time.deltaTime);
+
+
+
         // Hint: you'll need to multiply leftright by one of the static Vector3 values:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Vector3.html
         //      like up, left, right, or forward.
 
-        float leftright = Input.GetAxis("Horizontal");
+        
 
         // STEP 1 -------------------------------------------------------------
 
@@ -96,7 +124,7 @@ public class MuskratW7 : MonoBehaviour
         // This line of code is incorrect. 
         // Replace it with a different line of code that uses 'movement' to
         //      move the Muskrat forwards and backwards.
-        transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;
+        transform.Translate(Vector3.forward * movement * _moveSpeed * Time.deltaTime);
 
         // STEP 2 -------------------------------------------------------------
 
@@ -104,11 +132,31 @@ public class MuskratW7 : MonoBehaviour
         // STEP 4 -------------------------------------------------------------
         // Change the "flying" and "running" parameters on the Animator based
         //      on the Muskrat's movement to animate the Muskrat.
+        float speed = Mathf.Abs(movement);
+        if (speed > 0.1f)
+        {
+            
+            _animator.SetBool("running", true);
+        }
+        else
+        {
+            _animator.SetBool("running", false);
+        }
+        if (_rigidbody.linearVelocity.y > 0.1f)
+        {
+            _animator.SetBool("flying", true);
+        }
+        else
+        {
+            _animator.SetBool("flying", false);
+        }
+
+
         // Use _rigidbody.linearVelocity.
         // You may also find the absolute value method, Mathf.Abs(), helpful:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.Abs.html
 
-        
+
         // STEP 4 -------------------------------------------------------------
     }
 
