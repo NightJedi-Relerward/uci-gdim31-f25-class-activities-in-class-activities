@@ -44,6 +44,11 @@ For the complete process, first the Start() method finds the player, and Update(
 
 ### W8
 The original code in Step 2 made the muskrat to move in the worlds direction instead of its own.
+
+### W9
+1. google drawing link: https://docs.google.com/drawings/d/1rKWK0YFek2NvgOzxyGL1tudAk9h0U6wmktSe9YNntpU/edit
+2. I might finish adding up assets to the unity and relating with each game components
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
